@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Preserve sensitive raw live data outside a public repository by default.
+outputs/live/raw_annotation_export.json
+data/live/model_generation_audit.json

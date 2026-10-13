@@ -1,0 +1,107 @@
+{
+  "dataset_name": "energy-code-human-evaluation",
+  "workspace": "argilla",
+  "fields": [
+    {
+      "name": "instruction",
+      "type": "TextField",
+      "required": true,
+      "use_markdown": true
+    },
+    {
+      "name": "response",
+      "type": "TextField",
+      "required": true,
+      "use_markdown": true
+    },
+    {
+      "name": "validation_context",
+      "type": "TextField",
+      "required": true,
+      "use_markdown": true
+    }
+  ],
+  "questions": [
+    {
+      "name": "code_quality",
+      "type": "RatingQuestion",
+      "values": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "required": true
+    },
+    {
+      "name": "documentation",
+      "type": "RatingQuestion",
+      "values": [
+        0,
+        1,
+        2
+      ],
+      "required": true
+    },
+    {
+      "name": "examples",
+      "type": "RatingQuestion",
+      "values": [
+        0,
+        1,
+        2
+      ],
+      "required": true
+    },
+    {
+      "name": "primary_issue",
+      "type": "LabelQuestion",
+      "labels": [
+        "none",
+        "correctness",
+        "missing_validation",
+        "missing_documentation",
+        "missing_examples",
+        "mixed",
+        "uncertain"
+      ],
+      "required": true
+    },
+    {
+      "name": "evaluation_confidence",
+      "type": "LabelQuestion",
+      "labels": [
+        "high",
+        "low"
+      ],
+      "required": true
+    },
+    {
+      "name": "comment",
+      "type": "TextQuestion",
+      "required": true
+    }
+  ],
+  "metadata": [
+    {
+      "name": "prompt_id",
+      "type": "TermsMetadataProperty"
+    },
+    {
+      "name": "candidate_alias",
+      "type": "TermsMetadataProperty"
+    },
+    {
+      "name": "topic",
+      "type": "TermsMetadataProperty"
+    },
+    {
+      "name": "data_origin",
+      "type": "TermsMetadataProperty"
+    }
+  ],
+  "min_submitted": 1,
+  "score_computation": "code_quality + documentation + examples (0-7), computed after export",
+  "suggestions": "none; first-pass human ratings should not be anchored to automated suggestions",
+  "deployment_status": "configuration prepared, remote deployment not verified"
+}

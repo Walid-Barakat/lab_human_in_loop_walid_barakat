@@ -1,0 +1,55 @@
+{
+  "annotation_rows": 20,
+  "annotated_records": 20,
+  "source_records": 20,
+  "coverage": 1.0,
+  "annotators": 1,
+  "overall_record_weighted": {
+    "mean": 4.25,
+    "median": 5.0,
+    "min": 0.0,
+    "max": 7.0
+  },
+  "mean_components_record_weighted": {
+    "code_quality": 1.9,
+    "documentation": 1.15,
+    "examples": 1.2
+  },
+  "paired_comparison": {
+    "matched_prompt_count": 10,
+    "mean_A_minus_B": -0.3,
+    "A_wins": 5,
+    "B_wins": 5,
+    "ties": 0
+  },
+  "annotation_score_distribution": {
+    "0": 4,
+    "1": 1,
+    "2": 1,
+    "3": 4,
+    "7": 10
+  },
+  "primary_issue_counts_annotation_weighted": {
+    "none": 10,
+    "correctness": 5,
+    "missing_validation": 4,
+    "mixed": 1
+  },
+  "low_confidence_annotation_rows": 0,
+  "multi_annotated_records": 0,
+  "exact_total_agreement": null,
+  "data_origins": [
+    "synthetic_authored_demo"
+  ],
+  "annotation_sources": [
+    "synthetic_reference_not_human"
+  ],
+  "mode": "demo",
+  "excluded_response_groups": 0,
+  "deployment_verified": false,
+  "human_annotations_independently_verified": false,
+  "limitations": [
+    "Synthetic candidate answers and reference scores; not actual LLM outputs or human annotations.",
+    "No Argilla Space was created, uploaded, or exported in this demo."
+  ]
+}

@@ -1,0 +1,38 @@
+record_id,prompt_id,candidate_alias,instruction,response,annotator_id,code_quality,documentation,examples,primary_issue,evaluation_confidence,comment,status
+E02-B,E02,candidate_B,Write mean_load(values) for a nonempty list of nonnegative numeric kW samples. Reject an empty list or negative sample with ValueError. Include a docstring and two examples.,"```python
+def mean_load(values):
+    """"""Return mean kW load; empty or negative samples raise ValueError.""""""
+    if not values or any(v < 0 for v in values):
+        raise ValueError(""nonempty nonnegative samples required"")
+    return sum(values) / len(values)
+
+# mean_load([2, 4]) -> 3.0
+# mean_load([]) raises ValueError
+```",,,,,,,,pending
+E01-A,E01,candidate_A,Write kwh_to_mwh(kwh): convert a nonnegative numeric kWh value to MWh. Raise ValueError for negative input. Include a docstring and normal/edge examples.,"```python
+def kwh_to_mwh(kwh):
+    return kwh * 1000
+```",,,,,,,,pending
+E09-A,E09,candidate_A,"Write percentage_change(old,new): (new-old)/old*100. Require old>0 and new>=0; ValueError otherwise. Add docstring and normal/edge examples.","```python
+def percentage_change(old, new):
+    """"""Percent change relative to positive old value; new must be nonnegative.""""""
+    if old <= 0 or new < 0:
+        raise ValueError(""invalid baseline or new value"")
+    return (new - old) / old * 100
+
+# percentage_change(100, 120) -> 20.0
+# percentage_change(100, 0) -> -100.0
+```",,,,,,,,pending
+E10-B,E10,candidate_B,Write load_factor(values): mean/peak for a nonempty list of nonnegative loads. Return0 if all values are0; reject empty/negative input with ValueError. Add docs and examples.,"```python
+def load_factor(values):
+    # mean divided by peak
+    return sum(values) / len(values) / max(values)
+
+# load_factor([2, 4]) -> 0.75
+```",,,,,,,,pending
+E05-A,E05,candidate_A,"Write battery_runtime(usable_kwh, load_kw): hours at constant load, usable/load. Require usable>=0 and load>0; ValueError otherwise. Add docs and examples. Treat usable energy as already derated.","```python
+def battery_runtime(usable_kwh, load_kw):
+    if load_kw <= 0 or usable_kwh < 0:
+        raise ValueError(""invalid input"")
+    return usable_kwh / load_kw
+```",,,,,,,,pending

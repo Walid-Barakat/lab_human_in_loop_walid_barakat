@@ -1,0 +1,8 @@
+argilla==2.8.0
+pandas==2.2.3
+python-dotenv==1.2.4
+httpx==0.28.1
+openai==3.28.0
+nbformat==5.11.1
+matplotlib==3.10.8
+reportlab==4.4.9

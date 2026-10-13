@@ -1,0 +1,21 @@
+test_complete_annotations_and_scores (test_workflow.WorkflowTests.test_complete_annotations_and_scores) ... ok
+test_demo_export_not_human_claim (test_workflow.WorkflowTests.test_demo_export_not_human_claim) ... ok
+test_demo_structure (test_workflow.WorkflowTests.test_demo_structure) ... ok
+test_drafts_not_counted_as_submissions (test_workflow.WorkflowTests.test_drafts_not_counted_as_submissions) ... ok
+test_duplicate_user_question_rejected (test_workflow.WorkflowTests.test_duplicate_user_question_rejected) ... ok
+test_incomplete_or_invalid_scores_excluded (test_workflow.WorkflowTests.test_incomplete_or_invalid_scores_excluded) ... ok
+test_invalid_duplicate_and_missing_fields (test_workflow.WorkflowTests.test_invalid_duplicate_and_missing_fields) ... ok
+test_multiple_users_join_by_id_not_response_order (test_workflow.WorkflowTests.test_multiple_users_join_by_id_not_response_order) ... ok
+test_no_annotation_failure_is_explicit (test_workflow.WorkflowTests.test_no_annotation_failure_is_explicit) ... ok
+test_real_sdk_settings_with_mock_transport (test_workflow.WorkflowTests.test_real_sdk_settings_with_mock_transport) ... ok
+test_record_weighting_and_pairing (test_workflow.WorkflowTests.test_record_weighting_and_pairing) ... ok
+test_snapshot_preserves_response_status (test_workflow.WorkflowTests.test_snapshot_preserves_response_status) ... ok
+test_suggestions_never_count_as_annotations (test_workflow.WorkflowTests.test_suggestions_never_count_as_annotations) ... ok
+test_total_mismatch_rejected (test_workflow.WorkflowTests.test_total_mismatch_rejected) ... ok
+test_unmatched_pair_reported_and_partial_coverage (test_workflow.WorkflowTests.test_unmatched_pair_reported_and_partial_coverage) ... ok
+test_upload_reuses_identical_and_rejects_changed (test_workflow.WorkflowTests.test_upload_reuses_identical_and_rejects_changed) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.069s
+
+OK
